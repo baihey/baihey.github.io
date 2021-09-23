@@ -4,26 +4,36 @@
 <html lang="zh-Hans">
 <head>
 <meta name="sogou_site_verification" content="SljByBmsHw"/>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta name="apple-mobile-web-app-title" content="I am I - 个人主页">
-	<meta http-equiv="Cache-Control" content="no-siteapp">
-	<meta name="author" content="I am I,QSong#xxrar.com">
-	<meta name="keywords" content="I am I" />
-	<meta name="description" content="">
-	<link rel='stylesheet' href='css/css.css' type='text/css'/>
-	<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css'/>
-	<link rel='stylesheet' href='css/style.css' type='text/css'/>
-	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="I am I - 个人主页">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="author" content="I am I,QSong#xxrar.com">
+    <meta name="keywords" content="I am I" />
+    <meta name="description" content="">
+    <link rel='stylesheet' href='css/css.css' type='text/css'/>
+    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css'/>
+    <link rel='stylesheet' href='css/style.css' type='text/css'/>
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-
+        
 	<title>云 雨</title>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/skel.min.js"></script>
 	<script src="js/util.js"></script>
 	<script src="js/respond.min.js"></script>
 	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    
+    <!--ip-->
+    <head>
+        <meta charset="UTF-8">
+        <title>显示来访用户的IP及其地区</title>
+        <script type="text/javascript" src="http://ip.chinaz.com/getip.aspx"></script>
+    </head>
+    <body>
+    </body>
+    <!--ip-->
 </head>
 <body>
     <div id="wrapper">
@@ -36,21 +46,96 @@
                     <header>
                         <h1> 云  雨 <P>
                         <H5>BANGBEN 1.02</H5></h1>
+                        <!----><!---->
+                        <!--网站运营时间-->
+       
+            <tbody><tr class="altbg2" align="left">
+            <td class="header" align="left">
+            现在是：
+                    <script language="JavaScript" type="text/JavaScript">
+                    var day="";
+                    var month="";
+                    var ampm="";
+                    var ampmhour="";
+                    var myweekday="";
+                    var year="";
+                    mydate=new Date();
+                    myweekday=mydate.getDay();
+                    mymonth=mydate.getMonth()+1;
+                    myday= mydate.getDate();
+                    myyear= mydate.getYear();
+                    year=(myyear > 200) ? myyear : 1900 + myyear;
+                    if(myweekday == 0)
+                    weekday=" 星期日 ";
+                    else if(myweekday == 1)
+                    weekday=" 星期一 ";
+                    else if(myweekday == 2)
+                    weekday=" 星期二 ";
+                    else if(myweekday == 3)
+                    weekday=" 星期三 ";
+                    else if(myweekday == 4)
+                    weekday=" 星期四 ";
+                    else if(myweekday == 5)
+                    weekday=" 星期五 ";
+                    else if(myweekday == 6)
+                    weekday=" 星期六 ";
+                    document.write(year+"年"+mymonth+"月"+myday+"日 "+weekday);
+                    </script>
+                        <!--网站运营时间-->
+                       <!--时间--> <head>
+                         <meta charset="UTF-8">
+                         <meta name="viewport"
+                        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                     <title>Document</title>
+                </head>
+                <body>
+                <div id="div1"></div>
+                    <script>
+                     function time() {
+                         var date = new Date();
+                         var hour = date.getHours();
+                         var minutes = date.getMinutes();
+                         var seconds = date.getSeconds();
+                         var str = "时间" + hour + "时" + minutes + "分" + seconds + "秒";
+                         var div1 = document.getElementById("div1");
+                 div1.innerHTML = str;
+                                    }
+                         setInterval(time,1000);
+                    </script>
+                                </body><!--时间-->
+                                <br>
+
                         
                         <p><script src="https://tenapi.cn/yiyan/get/?code=js"></script></p>
                     </header>
                     <nav id="nav">
                         <ul class="actions vertical special spinY">
-                            <li><a href="#about-me" class="button">关于我</a>
+                            <li>
+                            <a href="#about-me" class="button">关于我</a>
                             </li>
-                            <li><a href="#friends" class="button">朋友们</a>
+                                
+                            <li>
+                            <a href="#yunyu" class="button">公告<font color="#ff0000">（有更新）</font></a>
                             </li>
-                            <li><a href="#yunyu" class="button">公告</a>
+                                    
+                            
+                           <!-- <a href="https://jq.qq.com/?_wv=1027&k=2EmnFEEp" class="button">加入我们</a>-->
+
+                       <li>     
+                    <a href="https://jq.qq.com/?_wv=1027&k=2EmnFEEp" target="_blank">
+                    <input type="button" value="加-入-我-们" </a>
+                    
                             </li>
-                             <li><a href="https://jq.qq.com/?_wv=1027&k=2EmnFEEp" class="button">加入我们</a>
+                                
+                             <li>
+                             <a href="#友情链接" class="button">友情链接<font color="#ff0000">（新增）</font></a>
+                             </li>
+                                    
+                             <li>
+                             <a href="#friends" class="button">网站人员与客服</a>
                             </li>
-                             <li><a href="#友情链接" class="button">友情链接</a>
-                            </li>
+                                        
                         </ul>
                     </nav>
                     <ul class="icons">
@@ -113,21 +198,48 @@
                         <strong>对接客服：</strong>                
                         <p><br>
                    
-                    <input type="button" value="客服（小乐）"
-                    onclick="javascrtpt:window.location.href='http://tool.gljlw.com/qq/?qq=1926768841'" />  
+                  <!-- <input type="button" value="客服（小乐）"
+                    onclick="javascrtpt:window.location.href='http://tool.gljlw.com/qq/?qq=1926768841'" /> -->
+
+                    <body>
+                    <a href="http://tool.gljlw.com/qq/?qq=1926768841" target="_blank">
+                    <input type="button" value="客服（小乐）"></a>
+                    </body> 
                    
                   
-                    <input type="button" value="客服（木羽）"
-                    onclick="javascrtpt:window.location.href='http://tool.gljlw.com/qq/?qq=2013201432'" />                 
-                    
-                    <input type="button" value="客服（云雨）"
-                    onclick="javascrtpt:window.location.href='http://tool.gljlw.com/qq/?qq=702203113'" />
+                    <!--<input type="button" value="客服（木羽）"
+                    onclick="javascrtpt:window.location.href='http://tool.gljlw.com/qq/?qq=2013201432'" />-->
+              
+                    <body>
+                    <a href="http://tool.gljlw.com/qq/?qq=2013201432" target="_blank">
+                    <input type="button" value="客服（木羽）"></a>
+                    </body> 
+
+                    <!--<input type="button" value="客服（云雨）"
+                    onclick="javascrtpt:window.location.href='http://tool.gljlw.com/qq/?qq=702203113'" />-->
+
+                    <body>
+                    <a href="http://tool.gljlw.com/qq/?qq=702203113" target="_blank">
+                    <input type="button" value="客服（云雨）"></a>
+                    </body> 
+
                     <p><br>
                     
-                  <strong>交流地：（加入我们 与我们交流 我们一直在等你)</strong>                
+                  <strong>交流地：（加入我们 与我们交流 我们一直在等你)</strong>   
+
                     <p><br>
-                    <input type="button" value="QQ群聊"
-                    onclick="javascrtpt:window.location.href='https://jq.qq.com/?_wv=1027&k=q3roy0Mu'" /> 
+                   <!--<input type="button" value="QQ群聊(点击跳转)"
+                    onclick="javascrtpt:window.location.href='https://jq.qq.com/?_wv=1027&k=q3roy0Mu'" /> -->
+
+
+                    <a href="https://jq.qq.com/?_wv=1027&k=q3roy0Mu" target="_blank">
+                    <input type="button" value="QQ群聊(点击跳转)"></a>
+                    
+                    
+
+                    </header>
+                    <input type="button" value="微信公众号：白何吖"
+                     
                     </header>
 
                     </article>
@@ -142,17 +254,37 @@
                     </li>
                 </ul>
                 <header>
-                  <h5>Hi~友情链接</h5>
-                <input type="button" value="暂无"
-                    onclick="javascrtpt:window.location.href='代放链接'1" />  
-                   
-                  
+                  <h5>友情链接<font color="#ff0000">（你现在看到的是外部链接请注意使用）</font></h5>
+                <html>
+                 <body>
+                    <a href="http://chaqbang.com/" target="_blank">
+                    <input type="button" value="QQ查绑"></a>
+                    </body> 
+                    </html>
+
+                     <input type="button" value="QQ照妖镜（看公告使用）"
+                    onclick="javascrtpt:window.location.href='https://www.wannw.icu/zhaoyj/?id=192676&url=http://yunyu192.m.motj.cn/'1" />
+
+                    <!--<html>
+                 <body>
+                    <a href="https://www.wannw.icu/zhaoyj/?id=192676&url=http://yunyu192.m.motj.cn/" target="_blank">
+                    <input type="button" value="QQ照妖镜（看公告使用）"></a>
+                    </body> 
+                    </html>-->
+                 
+
+                <!--  <input type="button" value="暂无"
+                    onclick="javascrtpt:window.location.href='https://www.wannw.icu/zhaoyj/?id=192676&url=http://yunyu192.m.motj.cn/'1" />
+
+                    </p>                 
+
                     <input type="button" value="暂无"
-                    onclick="javascrtpt:window.location.href='代放链接'1" />                 
-                    
+                    onclick="javascrtpt:window.location.href='https://www.wannw.icu/zhaoyj/?id=192676&url=http://yunyu192.m.motj.cn/'1" />
+
+                    </p>          
                     <input type="button" value="暂无"
                     onclick="javascrtpt:window.location.href='代放链接'1" />
-                    <p><br>
+                    <p><br>-->
                     </header>
                     </article>
                         
@@ -205,70 +337,94 @@
                    height="200" width="700" border="0">-->
 
 
-  <input type="button" value="点击这里查看详细公告"
- onclick="javascrtpt:window.location.href='https://docs.qq.com/doc/DWFFSdlhsT3hqeXRU'" />
-<dt>
-<b></b>
-<dd>
-<dt><b>置顶公告</b>
- <u1>
-<li><span>2021-8-31<p>
- [云雨网]:
- <p>
-</span>[试营公告]--目前云雨网站已开启首次试营阶段</a></li><p>
-</ul><dd>
-<p>
+                  <input type="button" value="查看详细公告"
+                 onclick="javascrtpt:window.location.href='https://docs.qq.com/doc/DWFFSdlhsT3hqeXRU'" />
+                 
+                 <!-- <input type="button" value="点击查看照妖镜详细公告"
+                 onclick="javascrtpt:window.location.href='https://docs.qq.com/doc/DWHdGRExWV2puVWNl'" />
+                <dt>
+                <b></b>-->
+                <!--z照妖镜-->
+                <html>
+                 <body>
+                    <a href="https://docs.qq.com/doc/DWHdGRExWV2puVWNl" target="_blank">
+                    <input type="button" value="查看照妖镜详细公告"></a>
+                    </body> 
+                    </html>
+                <dd>
+                <dt><b>置顶公告</b>
+                 <u1>
+                <li><span>2021-8-31<p>
+                 [云雨网]:
+                 <p>
+                </span>[试营公告]--目前云雨网站已开启首次试营阶段</a></li><p>
+                </ul><dd>
+                <p>
 
 
-<dd>
-<dt><b>日历公告</b>
+                <dd>
+                <dt><b>日历公告</b>
 
-<li><span>2021-9-22<p>
-</span><span>
-[优化]--优化了网站</a></li><p>
-[已知问题]:--在部分情况下会出现图片丢失仅显示文字的问题   目前已在修复
-</span>
-</dd>
-</dl>
+                <li><span>2021-9-23<p>
+                </span><span>
+                [新增功能]--新增了网站主页显示当前时间效果</a></li><p>
+                [新增功能]--[新增功能]-- "友情链接"新增（QQ照妖镜)
+                </a>
+                </span>
+                </dd>
+                </dl>
 
-<li><span>2021-9-18<p>
-</span><span>
-[尝新]--注册了微信公众号(白何吖)</a></li><p>
-</span>
-</dd>
-</dl>
 
-<li><span>2021-9-1<p>
-</span><span>
-[优化]--优化了网站UI</a></li><p>
-</span>
-</dd>
-</dl>
-[已知问题]--木羽客服接口丢失问题 目前已在修复</a></li><p>
-<p>
-[新增]--新增了"友情链接"入口<p><p><br>
-</span>
-</dd>
-</dl>
+                <li><span>2021-9-22<p>
+                </span><span>
+                [优化]--优化网站效果</a></li><p>
+                [已知问题]:--在部分情况下会出现图片丢失仅显示文字的问题   目前已在修复
+                </span>
+                </dd>
+                </dl>
 
-<li><span>2021-8-31<p>
- [云雨网]:
- <p>
-</span>[试营公告]--目前云雨网站已开启首次试营阶段</a></li><p>
-</ul>
-</dd>
-</dl>
-         </blockquote>
-              </header></article>
-                   <del></del>
-                   </blockquote>
-                    <p>
-                </div>
-            </div>
-        </article>
+                <li><span>2021-9-18<p>
+                </span><span>
+                [尝新]--注册了微信公众号(白何吖)</a></li><p>
+                </span>
+                </dd>
+                </dl>
 
-        <tr>
+                <li><span>2021-9-1<p>
+                </span><span>
+                [优化]--优化了网站UI</a></li><p>
+                </span>
+                </dd>
+                </dl>
+                [已知问题]--木羽客服接口丢失问题 目前已在修复</a></li><p>
+                <p>
+                [新增]--新增了"友情链接"入口<p><p><br>
+                </span>
+                </dd>
+                </dl>
 
+                <li><span>2021-8-31<p>
+                 [云雨网]:
+                 <p>
+                </span>[试营公告]--目前云雨网站已开启首次试营阶段</a></li><p>
+                </ul>
+                </dd>
+                </dl>
+                         </blockquote>
+                              </header></article>
+                                   <del></del>
+                                   </blockquote>
+                                    <p>
+                                </div>
+                            </div>
+                        </article>
+                            <!--背景图片-->
+            <!--><head><style>
+body{background:url(image/image111.jpg) top left;
+background-size:100%;}
+  </style></head>
+            <!背景图片-->
+           <tr>
         <footer id="footer" class="">
         &copy;2017 — 2021
         </footer>
@@ -282,8 +438,8 @@
    <progress value="45" max="100"></progress>45%
 </body>
 </html>
-
     </div>
+  
     <!--[if lte IE 8]><![endif]-->
     <script>
         (function($) {
@@ -309,7 +465,7 @@
                         }, 1500);
                     }, 100);
                 });
-                $('form').placeholder();
+               $('form').placeholder();
                 var $wrapper = $('#wrapper'),
                     $panels = $wrapper.children('.panel'),
                     locked = true;
